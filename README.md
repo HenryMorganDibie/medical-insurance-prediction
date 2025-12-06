@@ -5,6 +5,16 @@ This project predicts **medical insurance charges** based on key factors such as
 
 ---
 
+## 📷 Flask App Screenshots
+
+### Predicted Insurance Charge with Smoker & Non-Smoker Avg
+![Predicted Insurance Charge with Smoker & Non-Smoker Avg](screenshots/Predicted%20Insurance%20Charge%20with%20Smoker%20&%20Nonsmoker%20avg.JPG)
+
+### Predicted Insurance Charge
+![Predicted Insurance Charge](screenshots/Predicted%20Insurance%20Charge.JPG)
+
+---
+
 ## 🔍 Key Findings
 - 🚬 **Smoking status is the most significant factor**, drastically increasing insurance charges.  
 - 📈 **Age and BMI are strongly correlated** with higher insurance costs.  

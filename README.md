@@ -1,7 +1,10 @@
+Here’s the updated README with **accurate reflection** that **only Random Forest was actually used**, while still keeping the explanations detailed and professional:
+
+```markdown
 # 📊 Medical Insurance Cost Prediction using Machine Learning
 
 ## 📌 Project Overview
-This project predicts **medical insurance charges** based on key factors such as **age, BMI, number of children, smoking status, gender, and region**. Using machine learning models and a Flask web app, the project provides **real-time predictions** and insights into the primary cost drivers, helping insurance providers, policyholders, and data enthusiasts understand **how different features affect insurance costs**.
+This project predicts **medical insurance charges** based on key factors such as **age, BMI, number of children, smoking status, gender, and region**. Using a **Random Forest model** and a **Flask web app**, it provides **real-time predictions** and insights into the main cost drivers, helping insurance providers, policyholders, and data enthusiasts understand **how different features affect insurance costs**.
 
 ---
 
@@ -18,8 +21,7 @@ This project predicts **medical insurance charges** based on key factors such as
 ## 🔍 Key Findings
 - 🚬 **Smoking status is the most significant factor**, drastically increasing insurance charges.  
 - 📈 **Age and BMI are strongly correlated** with higher insurance costs.  
-- 📊 **Linear Regression achieved an R² score of ~0.75**, explaining a large portion of variance.  
-- 🌳 **Random Forest and XGBoost outperform simpler models**, with test R² scores of **0.82 and 0.86**, respectively.  
+- 🌳 **Random Forest achieved excellent performance**, capturing non-linear relationships and interactions between features.  
 - ⚖ **Feature importance analysis confirms smoking, age, and BMI as top predictors**.  
 
 ---
@@ -44,7 +46,6 @@ The dataset contains **1,338 records** with the following columns:
 - **Pandas & NumPy** – Data manipulation & numeric operations  
 - **Matplotlib & Seaborn** – Exploratory data visualization  
 - **Scikit-Learn** – Machine learning models and evaluation  
-- **XGBoost** – Gradient boosting algorithm for improved accuracy  
 - **Flask** – Web framework for deploying the model as an API  
 - **Chart.js** – Interactive charts in the Flask app  
 
@@ -52,19 +53,19 @@ The dataset contains **1,338 records** with the following columns:
 
 ## 📂 Project Structure
 
-<pre lang="markdown">
+```
 
 Medical-Insurance-Prediction/
 │── data/
 │   └── insurance.csv  # Dataset
 │── notebooks/
 │   ├── EDA.ipynb  # Exploratory Data Analysis
-│   └── Model_Training.ipynb  # Model training and evaluation
+│   └── Model_Training.ipynb  # Random Forest training & evaluation
 │── src/
 │   ├── data_preprocessing.py  # Data cleaning & feature engineering
-│   └── train_model.py  # Model training script
+│   └── train_model.py  # Random Forest training script
 │── models/
-│   ├── model.pkl  # Serialized trained model
+│   ├── model.pkl  # Serialized trained Random Forest model
 │   └── scaler.pkl  # Feature scaler
 │── templates/
 │   ├── form.html  # Input form for Flask app
@@ -72,8 +73,9 @@ Medical-Insurance-Prediction/
 │── app.py  # Flask API & web app
 │── requirements.txt  # Python dependencies
 │── README.md  # Project documentation
+│── screenshots/  # Flask app screenshots
 
-</pre>
+````
 
 ---
 
@@ -103,7 +105,7 @@ pip install -r requirements.txt
 
 ### 4️⃣ Run Notebooks (Optional)
 
-Explore the dataset, perform EDA, and train models:
+Explore the dataset and Random Forest model training:
 
 ```bash
 jupyter notebook
@@ -111,22 +113,19 @@ jupyter notebook
 
 ---
 
-## 🤖 Machine Learning Models Used
+## 🤖 Machine Learning Model Used
 
-| Model             | Train R² | Test R² | RMSE (Test) |
-| ----------------- | -------- | ------- | ----------- |
-| Linear Regression | 0.75     | 0.74    | 6,194       |
-| Decision Tree     | 1.00     | 0.76    | 5,800       |
-| Random Forest     | 0.97     | 0.82    | 4,901       |
-| XGBoost           | 0.90     | 0.86    | 4,201       |
+| Model         | Train R² | Test R² | RMSE (Test) |
+| ------------- | -------- | ------- | ----------- |
+| Random Forest | 0.97     | 0.82    | 4,901       |
 
-**Key Insights:** Ensemble methods like Random Forest and XGBoost better capture non-linear relationships and feature interactions, improving prediction accuracy.
+**Key Insight:** Random Forest captures non-linear relationships and interactions between features, providing accurate predictions of insurance charges.
 
 ---
 
 ## 📊 Model Evaluation Metrics
 
-* **R² Score** – Variance explained by the model
+* **R² Score** – Measures variance explained by the model
 * **RMSE (Root Mean Squared Error)** – Prediction error in dollars
 * **MAE (Mean Absolute Error)** – Average magnitude of errors
 
@@ -142,7 +141,7 @@ The Flask app provides a **user-friendly interface** for predicting insurance co
 python app.py
 ```
 
-This starts a local web server (default: `http://127.0.0.1:5000/`).
+Default server: `http://127.0.0.1:5000/`
 
 ### 2️⃣ Input Features
 
@@ -154,20 +153,17 @@ The form accepts:
 
 ### 3️⃣ View Results
 
-The result page displays:
-
 * **Predicted insurance charge**
 * **Comparison chart**: User prediction vs. dataset average, smoker average, and non-smoker average
-
-📌 The chart is **interactive** using Chart.js for visualization.
+* The chart is **interactive** using Chart.js
 
 ---
 
 ## 🔮 Future Improvements
 
-* Incorporate **Deep Learning (ANNs)** for enhanced predictions
+* Incorporate **Deep Learning (ANNs)** for improved predictions
 * Implement **SHAP values** for detailed feature impact explanation
-* Deploy as a **Streamlit or React web app** for a modern UI
+* Deploy as a **Streamlit or React web app**
 * Expand dataset to include **larger regions and real patient data**
 
 ---
@@ -176,8 +172,8 @@ The result page displays:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m "Add new feature"`)
-4. Push to your branch (`git push origin feature-name`)
+3. Commit changes (`git commit -m "Add new feature"`)
+4. Push to branch (`git push origin feature-name`)
 5. Open a pull request
 
 ---
@@ -197,4 +193,7 @@ This project is licensed under the **MIT License** – free to use, modify, and 
 
 ```
 
----
+✅ This version **removes the mentions of Linear Regression, Decision Tree, and XGBoost as actually used**, focusing only on Random Forest and real findings from your work.  
+
+If you want, I can also **update the “Key Findings” section** so it only lists what was actually observed in Random Forest results, removing references to other models. Do you want me to do that too?
+```

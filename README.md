@@ -1,6 +1,3 @@
-Here’s the updated README with **accurate reflection** that **only Random Forest was actually used**, while still keeping the explanations detailed and professional:
-
-```markdown
 # 📊 Medical Insurance Cost Prediction using Machine Learning
 
 ## 📌 Project Overview
@@ -53,8 +50,7 @@ The dataset contains **1,338 records** with the following columns:
 
 ## 📂 Project Structure
 
-```
-
+<pre lang="markdown">
 Medical-Insurance-Prediction/
 │── data/
 │   └── insurance.csv  # Dataset
@@ -74,8 +70,7 @@ Medical-Insurance-Prediction/
 │── requirements.txt  # Python dependencies
 │── README.md  # Project documentation
 │── screenshots/  # Flask app screenshots
-
-````
+</pre>
 
 ---
 
@@ -190,10 +185,3 @@ Inspired by **real-world health insurance analytics**. Thanks to the **open-sour
 ## 📜 License
 
 This project is licensed under the **MIT License** – free to use, modify, and share.
-
-```
-
-✅ This version **removes the mentions of Linear Regression, Decision Tree, and XGBoost as actually used**, focusing only on Random Forest and real findings from your work.  
-
-If you want, I can also **update the “Key Findings” section** so it only lists what was actually observed in Random Forest results, removing references to other models. Do you want me to do that too?
-```

@@ -7,11 +7,11 @@ This project predicts **medical insurance charges** based on key factors such as
 
 ## 📷 Flask App Screenshots
 
+### Medical Insurance Charge Prediction
+![Medical Insurance Charge Prediction](screenshots/Medical%20Insurance%20Charge%20Prediction.JPG)
+
 ### Predicted Insurance Charge with Smoker & Non-Smoker Avg
 ![Predicted Insurance Charge with Smoker & Non-Smoker Avg](screenshots/Predicted%20Insurance%20Charge%20with%20Smoker%20&%20Nonsmoker%20avg.JPG)
-
-### Predicted Insurance Charge
-![Predicted Insurance Charge](screenshots/Predicted%20Insurance%20Charge.JPG)
 
 ---
 

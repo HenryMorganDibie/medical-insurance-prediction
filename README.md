@@ -110,11 +110,13 @@ jupyter notebook
 
 ## 🤖 Machine Learning Model Used
 
+During model experimentation, **Linear Regression, XGBoost, and Random Forest** were tested. After evaluating performance metrics, **Random Forest was selected for deployment** due to its strong performance and ability to capture non-linear relationships.
+
 | Model         | Train R² | Test R² | RMSE (Test) |
 | ------------- | -------- | ------- | ----------- |
 | Random Forest | 0.97     | 0.82    | 4,901       |
 
-**Key Insight:** Random Forest captures non-linear relationships and interactions between features, providing accurate predictions of insurance charges.
+**Key Insight:** Among the models tested (Linear Regression, XGBoost, Random Forest), Random Forest was chosen for deployment because it effectively captures non-linear relationships and interactions between features, providing accurate predictions of insurance charges.
 
 ---
 
